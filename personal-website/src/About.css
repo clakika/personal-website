@@ -14,18 +14,24 @@
 }
 
 .TextContainer {
-    width:40%;
+    max-width:70%;
     margin: 0 auto;
 }
 
 .Text {
     font-size: 1em;
     font-family: 'Kumbh Sans', sans-serif;
-    line-height: 1.9em;
-    
+    line-height: 2em;   
 }
+
 
 .commonContainer {
     width: 900px;
     max-width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .TextContainer {
+        width: 40%
+    }
 }
