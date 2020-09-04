@@ -1,0 +1,31 @@
+.About {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.096);
+}
+
+.Photo {
+    border-radius: 50%;
+    width: 17%;
+    max-width: 100%;
+    shape-outside: circle(50%);
+}
+
+.TextContainer {
+    width:40%;
+    margin: 0 auto;
+}
+
+.Text {
+    font-size: 1em;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.9em;
+    
+}
+
+.commonContainer {
+    width: 900px;
+    max-width: 100%;
+}
