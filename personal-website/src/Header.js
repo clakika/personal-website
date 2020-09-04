@@ -8,7 +8,8 @@ export class Header extends Component {
     render() {
         return (
             <header className="Header">
-                <img className="Logo" src={logo}/>
+                    <div className="WinkLogo"></div>
+                    <img className="Logo" src={logo}/>
                 <h1>/*Big Data Developer*/</h1>
             </header>
         )
