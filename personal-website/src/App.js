@@ -12,7 +12,7 @@ class App extends Component {
         <Header />
         <About />
         <Contact />
-        <footer className="Footer">Claudia Kiril Cappai, Copyright &copy; 2020. All right reserved.</footer>
+        <footer className="Footer">Claudia Kiril Cappai, Copyright &copy; 2020. All rights reserved.</footer>
       </div>
     );
   }

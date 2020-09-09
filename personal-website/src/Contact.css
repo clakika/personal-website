@@ -89,6 +89,24 @@ button:hover {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
+.ErrorMessage {
+    position: absolute;
+    color: red;
+    transform: translateX(15rem);
+    opacity: 0;
+    transition: all .2s ease;
+    font-size: 12px;
+}
+
+.ErrorMessage.error {
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
 .FieldBox input {
     width: 100%;
     height: 2rem;
@@ -99,12 +117,11 @@ button:hover {
 
 .FieldBox textarea {
     width: 10rem;
-    height: 100%;
+    height: 6rem;
     resize: horizontal;
     border: none;
     padding-top: 0px;
     outline: none;
-    margin-top: 2rem;
 }
 
 .FieldBox textarea label{
@@ -159,10 +176,9 @@ button:hover {
     transform: translateX(0%);
 }
 
-
 .FieldBox textarea:focus + .LabelName .ContentName, 
 .FieldBox textarea:valid + .LabelName .ContentName {
-    transform: translateY(-560%);
+    transform: translateY(-690%);
     font-size: 14px;
     color: rgb(255, 91, 32);
 }
@@ -172,5 +188,44 @@ button:hover {
     transform: translateX(0%);
 }
 
+.MessageSent {
+    width: 25rem;
+    height: 14rem;
+    padding: 2rem;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgb(227, 224, 221);
+    transform: translate(-9rem, -20rem);
+    color: rgb(60, 51, 51);
+    display: none;
+    transition: all .2s ease-in-out;
+}
 
+.MessageSent.open {
+    display: block;
+}
+
+.MessageSentText {
+    line-height: 2;
+    transform: translateY(-2rem);
+}
+
+.MessageSent p {
+    color: rgb(255, 91, 32);
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: 800;
+    transform: translate(24.9rem, -2.5rem);
+    cursor: pointer;
+    
+}
+
+.MessageSent h3 {
+    font-size: 1.5em;
+}
+
+.envelopeIcon {
+    color: grey;
+    font-size: 2em;
+}
 
