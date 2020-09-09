@@ -9,17 +9,26 @@ export class Contact extends Component {
                 <div className="ContactMeContainer">
                     <h2>contact me 🦆</h2>
                     <form className="ContactForm">
-                        <label>name:</label>
-                        <br/>
-                        <input type="text" required></input>
-                        <br />
-                        <label>email:</label>
-                        <br/>
-                        <input type="email" required></input>
-                        <br />
-                        <label>message:</label>
-                        <br/>
-                        <textarea />
+                        <div className="FieldBox">
+                            <input type="text" name="name" required/>
+                            <label for="name" className='LabelName'>
+                                <span className="ContentName">name</span>
+                            </label>
+                        </div>
+                        <br></br>
+                        <div className="FieldBox">
+                            <input type="email" name="email" required/>
+                            <label for="email" className='LabelName'>
+                                <span className="ContentName">e-mail</span>
+                            </label>
+                        </div>
+                        <br></br>
+                        <div className="FieldBox">
+                            <textarea type="text" name="message" required/>
+                            <label for="message" className='LabelName'>
+                                <span className="ContentName">message</span>
+                            </label>
+                        </div>
                         <br></br>
                         <button>submit</button>
                     </form>

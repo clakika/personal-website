@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .Logo {
@@ -17,12 +18,18 @@
   height: 17px;
   border-radius:50%;
   background-color:white;
-  transform: translate(-4.5rem, 4rem);
+  transform: translate(3.9rem, 4rem);
   transition: all .2s ease-in-out;
+  z-index: 20;
 }
 
-.Header:hover .WinkLogo {
-  transform: translate(-4.55rem, 5rem);
+.LogoBox {
+  width: auto;
+  z-index: 10;
+}
+
+.LogoBox:hover .WinkLogo {
+  transform: translate(3.9rem, 4.9rem);
 }
   
 header h1 {
