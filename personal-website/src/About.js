@@ -9,6 +9,7 @@ export class About extends Component {
             <div className="About">
                 <div className="ContainerAbout">
                     <div className="ContentAbout">
+                    <h3>about me</h3>
                         <img className="Photo" src={photoAbout}/>
                         <div className="TextContainer">
                             <p className="Text"> My name is Matteo Cossu. I'm a Software Developer living in Magdeburg, Germany 🍺 where I work for Ultratendency, a big data consulting company. I'm passionate about solving hard problems and discovering new stuff 🔍.

@@ -229,3 +229,9 @@ button:focus {
     font-size: 2em;
 }
 
+@media only screen and (max-width: 580px) {
+    
+    button {
+        margin-right: -1.2rem;
+    }
+  }

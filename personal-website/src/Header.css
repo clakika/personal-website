@@ -1,23 +1,23 @@
 .Header {
-    height: 100vh;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
 }
 
 .Logo {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
 
 .WinkLogo {
   width: 17px;
   height: 17px;
-  border-radius:50%;
-  background-color:white;
+  border-radius: 50%;
+  background-color: white;
   transform: translate(3.9rem, 4rem);
   transition: all .2s ease-in-out;
   z-index: 20;
@@ -31,10 +31,16 @@
 .LogoBox:hover .WinkLogo {
   transform: translate(3.9rem, 4.9rem);
 }
-  
+
 header h1 {
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 700;
-    color: rgb(60, 51, 51);
-    letter-spacing: 2px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  color: rgb(60, 51, 51);
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 580px) {
+  header h1 {
+    font-size: 1.5em;
+  }
 }
