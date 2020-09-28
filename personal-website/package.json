@@ -1,9 +1,10 @@
 {
-  "homepage": "http://clakika.github.io/personal-website/",
+  "homepage": "http://clakika.github.io/personal-website",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "js-yaml": "^3.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "1.1.5"
